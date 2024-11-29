@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webutvikling2024 eksamen">
+    <title>Forside</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <form action="#" method="get">
+                <label for="search" class="visually-hidden">Søk etter produkter</label>
+                <input type="text" id="search" aria-label="Søk etter produkter">
+                <input type="submit" value="Søk">
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li>
+                        <a href="index.html" class="logo" aria-label="Gå til forsiden">
+                            <img src="images/capybara.jpg" alt="Nettbutikk Logo">
+                        </a>
+                    </li>
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#contact">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            <div class="user-icons">
+                <a href="index.html" aria-label="Min Side"><i class="fas fa-user"></i></a>
+                <a href="#wishlist" aria-label="Ønskeliste"><i class="fas fa-heart"></i></a>
+                <a href="kasse.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav aria-label="Brødsmulesti">
+        <ul>
+            <li><a href="index.html">← Fortsett og handle</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="product-card-checkout">
+            <article class="product-image-checkout">
+                <h3 id="product-card-heading-1">Produkt 1</h3>
+                <section id="product-info-1" aria-labelledby="product-card-heading-1">
+                    <h4 id="product-info-heading-1">Informasjon om produkt 1</h4>
+                    <section aria-label="Produktbilder">
+                        <figure>
+                            <img src="https://picsum.photos/600" alt="Eksempelprodukt 1">
+                        </figure>
+                    </section>
+                    <p><strong>Product Name</strong></p>
+                    <p><span>Farge:</span> beige</p>
+                    <p><span>Pris:</span> 599 kr</p>
+                </section>
+                <label for="size-1">Velg størrelse</label>
+                <select name="size" id="size-1" aria-label="Velg størrelse">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <section id="quantity-selection-1" aria-labelledby="quantity-selection-heading-1">
+                    <h4 id="quantity-selection-heading-1">Antall</h4>
+                    <input type="number" name="quantity" id="quantity-1" min="1" value="1" aria-label="Velg antall">
+                </section>
+                <div class="user-icons">
+                    <a href="#delete-product-1" aria-label="Slett produkt 1">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="product-card-checkout">
+            <article class="product-image-checkout">
+                <h3 id="product-card-heading-2">Produkt 2</h3>
+                <section id="product-info-2" aria-labelledby="product-card-heading-2">
+                    <h4 id="product-info-heading-2">Informasjon om produkt 2</h4>
+                    <section aria-label="Produktbilder">
+                        <figure>
+                            <img src="https://picsum.photos/600" alt="Eksempelprodukt 2">
+                        </figure>
+                    </section>
+                    <p><strong>Product Name</strong></p>
+                    <p><span>Farge:</span> beige</p>
+                    <p><span>Pris:</span> 799 kr</p>
+                </section>
+                <label for="size-2">Velg størrelse</label>
+                <select name="size" id="size-2" aria-label="Velg størrelse">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <section id="quantity-selection-2" aria-labelledby="quantity-selection-heading-2">
+                    <h4 id="quantity-selection-heading-2">Antall</h4>
+                    <input type="number" name="quantity" id="quantity-2" min="1" value="1" aria-label="Velg antall">
+                </section>
+                <div class="user-icons">
+                    <a href="#delete-product-2" aria-label="Slett produkt 2">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <h2>2. Dine opplysninger</h2>
+        <form>
+            <label>
+                Fornavn
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Ola..">
+            </label>
+            <label>
+                Etternavn
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Nordmann..">
+            </label>
+            <label>
+                Gateadresse
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="BRA veien 8..">
+            </label>
+            <label>
+                Postnummer
+                <input type="number" min="1000" max="9999" required placeholder="1111">
+            </label>
+            <label>
+                Poststed
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Halden..">
+            </label>
+            <label>
+                E-post
+                <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@gmail.com">
+            </label>
+            <label>
+                Telefon
+                <input type="tel" pattern="[0-9]{8,12}" required placeholder="12345678">
+            </label>
+            <button type="submit">Lagre</button>
+        </form>
+
+        <h2>3. Levering</h2>
+        <form>
+            <fieldset>
+                <legend>Velg leveringsmetode:</legend>
+                <input type="radio" id="express_home" name="delivery" value="express_home" required>
+                <label for="express_home">Express Hjemlevering</label>
+                <h3><i class="fas fa-shipping-fast"></i> Express Hjemlevering</h3>
+                <p><strong>3-4 Virkedager</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+                <input type="radio" id="express_pickup" name="delivery" value="express_pickup" required>
+                <label for="express_pickup">Express Utleveringssted</label>
+                <h3><i class="fas fa-store"></i> Express Utleveringssted</h3>
+                <p><strong>1-3 Virkedager</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+                <input type="radio" id="home_delivery" name="delivery" value="home_delivery" required>
+                <label for="home_delivery">Hjemlevering</label>
+                <h3><i class="fas fa-home"></i> Hjemlevering</h3>
+                <p><strong>5-8 Virkedager</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </fieldset>
+            <button type="submit">Send inn</button>
+        </form>
+
+        <h2>4. Betaling</h2>
+        <form>
+            <label>
+                Kortnummer
+                <input type="text" pattern="\d{8,}" minlength="8" required placeholder="123 45 678" aria-describedby="kortnummer-hjelp">
+            </label>
+            <p id="kortnummer-hjelp">Skriv inn minst 8 sifre i kortnummerfeltet.</p>
+            
+            <label>
+                Utløpsdato
+                <input type="date" max="2034-01-01" required aria-describedby="utlopdato-hjelp">
+            </label>
+            <p id="utlopdato-hjelp">Velg måned og år for kortets utløpsdato.</p>
+            
+            <label>
+                CVC
+                <input type="text" pattern="\d{3,}" minlength="3" required placeholder="123" aria-describedby="cvc-hjelp">
+            </label>
+            <p id="cvc-hjelp">Skriv inn de 3 sifrene på baksiden av kortet.</p>
+
+            <h3>Å betale inkl. mva</h3>
+            <p><span>Pris:</span> <strong>1 199 kr</strong></p>
+
+            <p>Du bekrefter herved at opplysningene og dokumentene du har
+                oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                uriktige eller ufullstendige opplysninger</p>
+
+            <button type="submit" aria-label="Fullfør kjøp og send inn betaling">Fullfør Kjøp</button>
+            
+            <label>
+                <input type="checkbox" required>
+                ja, jeg godtar vilkårene.
+            </label>
+            <label>
+                <input type="checkbox">
+                Ja takk! Send nyhetsbrev til meg.
+            </label>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo" aria-label="Gå til forsiden">
+                    <img src="images/capybara.jpg" alt="Nettbutikk Logo">
+                </a>
+                <p>Phasellus blandit risus vel molestie imperdiet</p>
+            </div>
+    
+            <section id="contact-section">
+                <h2>Kontakt</h2>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> 123 Gatenavn, 456 By</p>
+                    <p><i class="fas fa-envelope"></i> <strong>E-post:</strong> abc@gmail.no</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong>Telefon:</strong> 123 45 678</p>
+                    <p><i class="fas fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+                </address>
+            </section>
+    
+            <section id="shortcuts-section">
+                <ul>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#contact">Kontakt oss</a></li>
+                </ul>
+            </section>
+    
+            <section id="social-media-section">
+                <h2>Sosiale medier</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </section>
+        </div>
+        <a href="#top" class="back-to-top" aria-label="Hopp til toppen">Hopp til toppen</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webutvikling2024 eksamen">
+    <title>Forside</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <form action="#" method="get">
+                <label for="search" class="visually-hidden">Søk etter produkter</label>
+                <input type="text" id="search" aria-label="Søk etter produkter">
+                <input type="submit" value="Søk">
+            </form>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li>
+                        <a href="index.html" class="logo" aria-label="Gå til forsiden">
+                            <img src="images/capybara.jpg" alt="Nettbutikk Logo">
+                        </a>
+                    </li>
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#contact">Kontakt oss</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-icons">
+                <a href="index.html" aria-label="Min Side"><i class="fas fa-user"></i></a>
+                <a href="#wishlist" aria-label="Ønskeliste"><i class="fas fa-heart"></i></a>
+                <a href="kasse.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="conteudo">
+            <div class="carrousel">
+                <button class="nav-button left-btn">◄</button>
+                <article class="card" style="background-image: url('images/photo-planet-blue.jpg');">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>consectetur adipiscing elit. Sed blandit sodales enim, in imperdiet leo aliquet non. Nulla porttitor eros elit</p>
+                    <a href="#" class="banner-link">Les mer</a>
+                </article>
+                <article class="card" style="background-image: url('images/photo-planet-green.jpg');">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>consectetur adipiscing elit. Sed blandit sodales enim, in imperdiet leo aliquet non. Nulla porttitor eros elit</p>
+                    <a href="#" class="banner-link">Les mer</a>
+                </article>
+                <article class="card" style="background-image: url('images/photo-planet-red.jpg');">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>consectetur adipiscing elit. Sed blandit sodales enim, in imperdiet leo aliquet non. Nulla porttitor eros elit</p>
+                    <a href="#" class="banner-link">Les mer</a>
+                </article>
+                <button class="nav-button right-btn">►</button>
+            </div>
+        </div>
+
+        <section id="popular-products" aria-labelledby="popular-products-heading">
+            <h2 id="popular-products-heading">Våre mest populære produkter</h2>
+            <p>Oppdag det beste av det beste</p>
+
+            <div class="filter-buttons">
+                <button type="button" class="filter-button" aria-label="Ny produkt">New Product</button>
+                <button type="button" class="filter-button" aria-label="Spesial pris">Special Price</button>
+                <button type="button" class="filter-button" aria-label="Bestselgere">Best Sellers</button>
+            </div>
+
+            <ul class="product-grid">
+                <li class="product-card">
+                    <a href="produkter.html">
+                        <img src="https://picsum.photos/400/400" alt="Produktbilde">
+                        <h3>Produkt 1</h3>
+                        <p>Kr 1999</p>
+                        <p>842 Reviews</p>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="produkter.html">
+                        <img src="https://picsum.photos/400/400" alt="Produktbilde">
+                        <h3>Produkt 2</h3>
+                        <p>Kr 1999</p>
+                        <p>842 Reviews</p>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="produkter.html">
+                        <img src="https://picsum.photos/400/400" alt="Produktbilde">
+                        <h3>Produkt 3</h3>
+                        <p>Kr 1999</p>
+                        <p>842 Reviews</p>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="produkter.html">
+                        <img src="https://picsum.photos/400/400" alt="Produktbilde">
+                        <h3>Produkt 4</h3>
+                        <p>Kr 1999</p>
+                        <p>842 Reviews</p>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="produkter.html">
+                        <img src="https://picsum.photos/400/400" alt="Produktbilde">
+                        <h3>Produkt 5</h3>
+                        <p>Kr 1999</p>
+                        <p>842 Reviews</p>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="produkter.html">
+                        <img src="https://picsum.photos/400/400" alt="Produktbilde">
+                        <h3>Produkt 6</h3>
+                        <p>Kr 1999</p>
+                        <p>842 Reviews</p>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="categories" aria-labelledby="categories-heading">
+            <h2 id="categories-heading">Våre mest populære kategorier</h2>
+            <p>Oppdag det beste av det beste</p>
+            
+            <ul class="category-grid">
+                <li class="category-card category-card-small">
+                    <h3>Category 1</h3>
+                    <img src="https://picsum.photos/400/400" alt="Category 1 bilde">
+                </li>
+                <li class="category-card category-card-small">
+                    <h3>Category 2</h3>
+                    <img src="https://picsum.photos/400/400" alt="Category 2 bilde">
+                </li>
+                <li class="category-card category-card-small">
+                    <h3>Category 3</h3>
+                    <img src="https://picsum.photos/400/400" alt="Category 3 bilde">
+                </li>
+                <li class="category-card category-card-large">
+                    <h3>Category 4</h3>
+                    <img src="https://picsum.photos/400/400" alt="Category 4 bilde">
+                </li>
+                <li class="category-card category-card-medium">
+                    <h3>Category 5</h3>
+                    <img src="https://picsum.photos/400/400" alt="Category 5 bilde">
+                </li>
+            </ul>
+        </section>
+
+        <section id="review" aria-labelledby="review-heading">
+            <h2 id="review-heading">Anmeldelser</h2>
+            <div class="scroll-container" aria-live="polite" aria-atomic="true">
+                <article class="review-card" aria-labelledby="review-1-title">
+                    <button aria-label="Les mer om anmeldelse 1">
+                        <img src="https://picsum.photos/400/400" alt="Bilde relatert til anmeldelse" class="review-image">
+                    </button>
+                    <div>
+                        <h3 id="review-1-title">Rober Labrador</h3>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </article>
+                <article class="review-card" aria-labelledby="review-2-title">
+                    <button aria-label="Les mer om anmeldelse 2">
+                        <img src="https://picsum.photos/400/400" alt="Bilde relatert til anmeldelse" class="review-image">
+                    </button>
+                    <div>
+                        <h3 id="review-2-title">Rober Labrador</h3>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </article>
+                <article class="review-card" aria-labelledby="review-3-title">
+                    <button aria-label="Les mer om anmeldelse 3">
+                        <img src="https://picsum.photos/400/400" alt="Bilde relatert til anmeldelse" class="review-image">
+                    </button>
+                    <div>
+                        <h3 id="review-3-title">Rober Labrador</h3>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </article>
+                <article class="review-card" aria-labelledby="review-4-title">
+                    <button aria-label="Les mer om anmeldelse 4">
+                        <img src="https://picsum.photos/400/400" alt="Bilde relatert til anmeldelse" class="review-image">
+                    </button>
+                    <div>
+                        <h3 id="review-4-title">Rober Labrador</h3>
+                        <ul class="rating">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="far fa-star"></span></li>
+                        </ul>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo" aria-label="Gå til forsiden">
+                    <img src="images/capybara.jpg" alt="Nettbutikk Logo">
+                </a>
+                <p>Phasellus blandit risus vel molestie imperdiet</p>
+            </div>
+
+            <section id="contact-section">
+                <h2>Kontakt</h2>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> 123 Gatenavn, 456 By</p>
+                    <p><i class="fas fa-envelope"></i> <strong>E-post:</strong> abc@gmail.no</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong>Telefon:</strong> 123 45 678</p>
+                    <p><i class="fas fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+                </address>
+            </section>
+
+            <section id="shortcuts-section">
+                <ul>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#contact">Kontakt oss</a></li>
+                </ul>
+            </section>
+
+            <section id="social-media-section">
+                <h2>Sosiale medier</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </section>
+        </div>
+        <a href="#top" class="back-to-top" aria-label="Hopp til toppen">Hopp til toppen</a>
+    </footer>
+</html>

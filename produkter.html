@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webutvikling2024 eksamen">
+    <title>Forside</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <form action="#" method="get">
+                <label for="search" class="visually-hidden">Søk etter produkter</label>
+                <input type="text" id="search" aria-label="Søk etter produkter">
+                <input type="submit" value="Søk">
+            </form>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li>
+                        <a href="index.html" class="logo" aria-label="Gå til forsiden">
+                            <img src="images/capybara.jpg" alt="Nettbutikk Logo">
+                        </a>
+                    </li>
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#contact">Kontakt oss</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-icons">
+                <a href="index.html" aria-label="Min Side"><i class="fas fa-user"></i></a>
+                <a href="#wishlist" aria-label="Ønskeliste"><i class="fas fa-heart"></i></a>
+                <a href="kasse.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav aria-label="Brødsmulesti">
+        <ul>
+            <li><a href="index.html">← Fortsett og handle</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section aria-label="product-product-image">
+            <h2 id="product-images-heading">Eksempelproduktbilder</h2>
+            <div aria-labelledby="product-images-heading">
+                <img src="https://picsum.photos/600" alt="Stortbilde av Eksempelprodukt 1" class="product-image-large">
+                
+                <ul class="product-image-container">
+                    <li><img src="https://picsum.photos/200" alt="Eksempelproduktbilde 1" class="product-image"></li>
+                    <li><img src="https://picsum.photos/200" alt="Eksempelproduktbilde 2" class="product-image"></li>
+                    <li><img src="https://picsum.photos/200" alt="Eksempelproduktbilde 3" class="product-image"></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="product-details" aria-labelledby="product-details-heading">
+            <h2 id="product-details-heading">Produktinformasjon</h2>
+            <p>
+                <span>Produktnavn:</span> <strong>Eksempelprodukt</strong>
+            </p>
+            <p>
+                <span>Merke:</span> <a href="#">Merkenavn</a>
+            </p>
+            <p>
+                <span>Pris:</span> 999,- NOK
+            </p>
+            <p>
+                <span>Farge:</span> <strong>Grå</strong>
+            </p>
+        
+            <label for="size">Velg størrelse</label>
+            <select name="size" id="size" aria-label="Velg størrelse">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        
+            <button aria-label="Legg til i favoritter">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+        
+            <button aria-label="Legg til i handlekurv">
+                Legg til i handlekurv
+            </button>
+        
+            <details aria-labelledby="material-maintenance">
+                <summary id="material-maintenance"><strong>Materiale og vedlikehold</strong></summary>
+                <p>Materiale: 100% bomull</p>
+            </details>
+        
+            <details aria-labelledby="size-table">
+                <summary id="size-table"><strong>Størrelsestabell</strong></summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Størrelse</th>
+                            <th>Bryst</th>
+                            <th>Hofte</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>XS</td>
+                            <td>10</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>10</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>10</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>10</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>10</td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+        </section>
+        
+
+        <details aria-labelledby="review">
+            <summary id="review"><strong>Anmeldelser</strong></summary>
+            <p>Roberr labrador</p>
+            <p>17-10-2024</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+        </details>
+
+        <section id="related-products" aria-labelledby="related-products-heading">
+            <h2 id="related-products-heading">Lignende Produkter</h2>
+            <div class="scroll-container" aria-live="polite" aria-atomic="true">
+                <a href="relaterte-produkter.html" class="see-more-link" aria-label="Flere produkter">
+                    Se flere
+                </a>
+
+                <div class="product-container">
+                    <article class="product-product" id="product-1">
+                        <a href="produkter.html" class="product-product-link" aria-label="Detaljer">
+                            <img src="https://picsum.photos/400/400" alt="Bilde av Eksempelprodukt 1" class="product-product-image">
+                        </a>
+                        <ul class="product-product-details">
+                            <li><h3 class="product-product-name" id="product-name-1">Product name</h3></li>
+                            <li class="product-product-price">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit sodales enim, in imperdiet leo aliquet non. Nulla porttitor eros elit, ac ultrices lectus iaculis sed. Phasellus blandit risus vel molestie imperdiet. Aliquam posuere quam arcu, ac tincidunt urna rhoncus gravida. Nam ut velit in libero laoreet pretium sed</li>
+                        </ul>
+                        <button class="product-product-favorite" aria-label="Legg til i favoritter">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product-product" id="product-2">
+                        <a href="produkter.html" class="product-product-link" aria-label="Detaljer">
+                            <img src="https://picsum.photos/400/400" alt="Bilde av Eksempelprodukt 2" class="product-product-image">
+                        </a>
+                        <ul class="product-product-details">
+                            <li><h3 class="product-product-name" id="product-name-2">Product name</h3></li>
+                            <li class="product-product-price">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit sodales enim, in imperdiet leo aliquet non. Nulla porttitor eros elit, ac ultrices lectus iaculis sed. Phasellus blandit risus vel molestie imperdiet. Aliquam posuere quam arcu, ac tincidunt urna rhoncus gravida. Nam ut velit in libero laoreet pretium sed</li>
+                        </ul>
+                        <button class="product-product-favorite" aria-label="Legg til i favoritter">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product-product" id="product-3">
+                        <a href="produkter.html" class="product-product-link" aria-label="Detaljer">
+                            <img src="https://picsum.photos/400/400" alt="Bilde av Eksempelprodukt 3" class="product-product-image">
+                        </a>
+                        <ul class="product-product-details">
+                            <li><h3 class="product-product-name" id="product-name-3">Product name</h3></li>
+                            <li class="product-product-price">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit sodales enim, in imperdiet leo aliquet non. Nulla porttitor eros elit, ac ultrices lectus iaculis sed. Phasellus blandit risus vel molestie imperdiet. Aliquam posuere quam arcu, ac tincidunt urna rhoncus gravida. Nam ut velit in libero laoreet pretium sed</li>
+                        </ul>
+                        <button class="product-product-favorite" aria-label="Legg til i favoritter">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product-product" id="product-4">
+                        <a href="produkter.html" class="product-product-link" aria-label="Detaljer">
+                            <img src="https://picsum.photos/400/400" alt="Bilde av Eksempelprodukt 4" class="product-product-image">
+                        </a>
+                        <ul class="product-product-details">
+                            <li><h3 class="product-product-name" id="product-name-4">Product name</h3></li>
+                            <li class="product-product-price">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit sodales enim, in imperdiet leo aliquet non. Nulla porttitor eros elit, ac ultrices lectus iaculis sed. Phasellus blandit risus vel molestie imperdiet. Aliquam posuere quam arcu, ac tincidunt urna rhoncus gravida. Nam ut velit in libero laoreet pretium sed</li>
+                        </ul>
+                        <button class="product-product-favorite" aria-label="Legg til i favoritter">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo" aria-label="Gå til forsiden">
+                    <img src="images/capybara.jpg" alt="Nettbutikk Logo">
+                </a>
+                <p>Phasellus blandit risus vel molestie imperdiet</p>
+            </div>
+    
+            <section id="contact-section">
+                <h2>Kontakt</h2>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> 123 Gatenavn, 456 By</p>
+                    <p><i class="fas fa-envelope"></i> <strong>E-post:</strong> abc@gmail.no</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong>Telefon:</strong> 123 45 678</p>
+                    <p><i class="fas fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+                </address>
+            </section>
+    
+            <section id="shortcuts-section">
+                <ul>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li><a href="#categories">Kategorier</a></li>
+                    <li><a href="#contact">Kontakt oss</a></li>
+                </ul>
+            </section>
+    
+            <section id="social-media-section">
+                <h2>Sosiale medier</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </section>
+        </div>
+        <a href="#top" class="back-to-top" aria-label="Hopp til toppen">Hopp til toppen</a>
+    </footer>
+</body>
+</html>
